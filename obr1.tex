@@ -1,0 +1,23 @@
+\documentclass{article}
+
+\pagestyle{empty}
+
+\usepackage{pstricks}
+\usepackage{pst-node}
+\usepackage{graphicx}
+\newcommand{\posetlength}{1em}
+
+\begin{document}
+\thispagestyle{empty}
+\noindent
+\setlength{\unitlength}{\posetlength}
+\psset{xunit=\posetlength,yunit=\posetlength}
+\begin{picture}(5,5)
+\psframe(1,0)(4,5)
+\psline(0,1)(1,1)
+\psline(0,4)(1,4)
+\psline(4,2.5)(5,2.5)
+\rput(2.5,2.5){$\mathcal A$}
+\end{picture}
+\end{document}
+

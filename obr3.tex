@@ -1,0 +1,26 @@
+\documentclass{article}
+
+\pagestyle{empty}
+\usepackage{pstricks}
+\usepackage{pst-node}
+\usepackage{graphicx}
+\usepackage{fullpage}
+%\special{papersize=270mm,200mm}}
+%\usepackage[margin=1mm, paperwidth=120mm, paperheight=47mm]{geometry}
+
+\begin{document}
+\thispagestyle{empty}
+%\noindent
+\setlength{\unitlength}{1mm}
+\psset{xunit=1mm,yunit=1mm}
+\begin{picture}(120,42)
+%\psgrid[gridlabels=0.7mm,subgriddiv=0,subgridwidth=.1mm,gridwidth=0.1pt](0,0)(0,0)(110,65)
+\put(1,9){\circle*{1}}
+%\put(0,0){\framebox(113,41)}
+\psline[linewidth=1pt](13,9)(33,9)
+\pspolygon[linewidth=1pt,fillstyle=solid,fillcolor=gray](50,5)(70,7)(55,17)
+\pspolygon[linewidth=1pt,fillstyle=solid,fillcolor=lightgray](79,4)(93,0)(105,4)(90,29)
+\psline[linewidth=1pt](93,0)(90,29)
+\psline[linestyle=dashed,linewidth=1pt](79,4)(105,4)
+\end{picture}
+\end{document}
